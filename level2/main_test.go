@@ -99,5 +99,11 @@ func TestFizzBuzz(t *testing.T) {
 		}
 	})
 
-	
+	t.Run("should return 13 when input is 13", func(t *testing.T) {
+		result := FizzBuzz(13)
+		expected := "13"
+		if result != expected {
+			t.Errorf("FizzBuzz(13) = %s; want %s", result, expected)
+		}
+	})
 }
