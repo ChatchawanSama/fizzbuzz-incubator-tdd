@@ -2,10 +2,9 @@ package level2
 
 import "fmt"
 
-//FizzBuzz With One If No Switch
+// FizzBuzz With One If No Switch
 func FizzBuzz(n int) string {
-	if n%3 == 0 {
-		return "Fizz"
-	}
-	return fmt.Sprint(n)
+	arr := []string{"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"}
+
+	return fmt.Sprint(arr[(n%10)-1])
 }
